@@ -22,6 +22,8 @@ const Authentication = () => {
   return (
     <div className="auth-container">
       <h2>StackGuard Login</h2>
+      <p className="hint">Use username: admin | password: 1234</p>
+
       <form onSubmit={handleLogin}>
         <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" />
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
